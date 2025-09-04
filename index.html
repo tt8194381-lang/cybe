@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Panel Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 180px;
+      background: #111;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .sidebar button {
+      background: #222;
+      color: #f00;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
+      background: linear-gradient(black, #300);
+    }
+    .toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #222;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+    .toggle input {
+      transform: scale(1.5);
+      accent-color: red;
+    }
+    .activate {
+      background: red;
+      border: none;
+      padding: 12px 20px;
+      color: white;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <button>Contact</button>
+    <button>Optimize</button>
+    <button>Gaming</button>
+    <button>Network</button>
+    <button>Display</button>
+    <button>Assistive</button>
+    <button>Screen</button>
+  </div>
+  <div class="content">
+    <h2>⚡ Screen Settings</h2>
+    <div class="toggle">
+      <span>Smooth Touch</span>
+      <input type="checkbox" checked>
+    </div>
+    <div class="toggle">
+      <span>Hyper Click</span>
+      <input type="checkbox" checked>
+    </div>
+    <div class="toggle">
+      <span>Screen Guard</span>
+      <input type="checkbox" checked>
+    </div>
+    <button class="activate">⚡ Activate Config</button>
+  </div>
+</body>
+</html>
